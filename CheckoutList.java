@@ -12,5 +12,19 @@ public class CheckoutList {
         this.date = null;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public ArrayList<Book> getBooks() {
+        return books;
+    }
+
+    
+
     
 }
