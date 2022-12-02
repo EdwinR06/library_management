@@ -37,4 +37,24 @@ public class Library {
         }
     }
 
+    private boolean isBookCheckedOut(Book book) {
+        boolean availableStatus;
+        if(book.getCheckedOut() || book.getIsMissing()) {
+            availableStatus = false;
+        } else {
+            availableStatus = true;
+        }
+        return availableStatus;
+    }
+
+    public void checkoutBooks(String customerName, ArrayList<Book> books) {
+        CheckoutList checkout = new CheckoutList(customerName, this);
+        for(int i = 0; i < books.size(); i++){
+            if(!isBookCheckedOut(books.get(i))){
+                checkout.addBook(books.get(i));
+                books.get(i).setCheckedOut(true);
+            }
+        }
+    }
+
 }
