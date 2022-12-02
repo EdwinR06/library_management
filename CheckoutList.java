@@ -38,4 +38,8 @@ public class CheckoutList {
         hasBeenReturned = true;
     }
 
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
 }
