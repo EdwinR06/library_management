@@ -40,4 +40,16 @@ public class Book {
         return lastDateCheckedOut;
     }
 
+    public void setCheckedOut(boolean checkedOut) {
+        this.checkedOut = checkedOut;
+    }
+
+    public void setIsMissing(boolean isMissing) {
+        this.isMissing = isMissing;
+    }
+
+    public void setLastDateCheckedOut(Date date) {
+        this.lastDateCheckedOut = date;
+    }
+
 }
