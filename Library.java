@@ -11,4 +11,10 @@ public class Library {
         this.booksCapacity = 1000;
     }
 
+    public Library(String name, int booksCapacity) {
+        this.books = new ArrayList<Book>();
+        this.name = name;
+        this.booksCapacity = booksCapacity;
+    }
+
 }
