@@ -24,7 +24,12 @@ public class CheckoutList {
         return books;
     }
 
-    
+    public void returnBooks() {
+        for(int i = 0; i < books.size(); i++) {
+            books.get(i).setCheckedOut(false);
+            books.get(i).setIsMissing(false);
+        }
+    }
 
     
 }
