@@ -29,4 +29,12 @@ public class Library {
         return calendar.DATE;
     }
 
+    public void returnBooks(String name) {
+        for(int i = 0; i < checkoutHistory.size(); i++) {
+            if(checkoutHistory.get(i).getName().equals(name)) {
+                checkoutHistory.get(i).returnBooks();
+            }
+        }
+    }
+
 }
