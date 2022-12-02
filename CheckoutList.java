@@ -4,19 +4,19 @@ import java.util.Date;
 public class CheckoutList {
     private String name; 
     private ArrayList<Book> books;
-    private Date date;
+    private int date;
 
-    public CheckoutList(String name) {
+    public CheckoutList(String name, Library library) {
         this.name = name;
         this.books = new ArrayList<Book>();
-        this.date = null;
+        this.date = library.getDate();
     }
 
     public String getName() {
         return name;
     }
 
-    public Date getDate() {
+    public int getDate() {
         return date;
     }
 
@@ -31,5 +31,4 @@ public class CheckoutList {
         }
     }
 
-    
 }
