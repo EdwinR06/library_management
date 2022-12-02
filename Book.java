@@ -16,5 +16,28 @@ public class Book {
         this.lastDateCheckedOut = null;
     }
 
-    
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public boolean getCheckedOut() {
+        return checkedOut;
+    }
+
+    public boolean getIsMissing() {
+        return isMissing;
+    }
+
+    public Date getLastDateCheckedOut(){
+        return lastDateCheckedOut;
+    }
+
 }
