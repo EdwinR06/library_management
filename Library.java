@@ -59,4 +59,12 @@ public class Library {
         }
     }
 
+    public void addBook(String title, int pages, String author, String genre) {
+        for(int i = 0; i < users.size(); i++) {
+            if(users.get(i) instanceof Librarian && users.get(i).getIsLoggedIn() == true) {
+                Book book = new Book(title, pages, author, genre);
+                books.add(book);
+            }
+        }
+    }
 }
