@@ -6,14 +6,16 @@ public class Book {
     private int pages;
     private String author;
     private Date lastDateCheckedOut;
+    private String genre;
 
-    public Book(String title, int pages, String author) {
+    public Book(String title, int pages, String author, String genre) {
         this.title = title;
         this.checkedOut = false;
         this.isMissing = false;
         this.pages = pages;
         this.author = author;
         this.lastDateCheckedOut = null;
+        this.genre = genre;
     }
 
     public String getTitle() {
@@ -50,6 +52,10 @@ public class Book {
 
     public void setLastDateCheckedOut(Date date) {
         this.lastDateCheckedOut = date;
+    }
+
+    public String getGenre() {
+        return genre;
     }
 
 }
