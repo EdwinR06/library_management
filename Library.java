@@ -10,6 +10,7 @@ public class Library {
     private String name;
     private int booksCapacity;
     private Calendar calendar;
+    private ArrayList<User> users;
 
     public Library(String name) {
         this.books = new ArrayList<Book>();
@@ -17,6 +18,7 @@ public class Library {
         this.name = name;
         this.booksCapacity = 1000;
         this.calendar = Calendar.getInstance(TimeZone.getDefault(), new Locale("EN", "US"));
+        this.users = new ArrayList<User>();
     }
 
     public Library(String name, int booksCapacity) {
